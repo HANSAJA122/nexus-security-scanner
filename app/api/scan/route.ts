@@ -11,6 +11,7 @@ const vulnMap: Record<string, { advice: string; severity: "critical" | "warning"
   "http": { severity: "warning", advice: "Web server is unencrypted. Banner may reveal server software." },
   "https": { severity: "secure", advice: "HTTPS active. Banner reveals SSL/TLS provider details." },
   "mysql": { severity: "critical", advice: "Database port exposed. Check banner for version-specific exploits." },
+  "postgresql": { severity: "critical", advice: "PostgreSQL exposed. Check banner for version-specific exploits." },
   "unknown": { severity: "info", advice: "Unknown service. Manual investigation required." }
 };
 
